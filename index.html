@@ -1,1 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>My NewsFeed</title>
+  </head>
+  <body>
+    <!--HEADER-->
+
+    <div class="header">
+      <nav>
+        <h1 class="head-name">MY<span> NEWSFEED</span></h1>
+        <button type="button" id="loadSavedButton">Load Saved News</button>
+      </nav>
+    </div>
+
+    <div class="categories">
+      <button
+        type="button"
+        class="categorySelect"
+        onclick="showCategory(event)"
+        value="all"
+      >
+        All
+      </button>
+      <button
+        type="button"
+        class="categorySelect"
+        onclick="showCategory(event)"
+        value="science"
+      >
+        Science
+      </button>
+      <button
+        type="button"
+        class="categorySelect"
+        onclick="showCategory(event)"
+        value="hatke"
+      >
+        Hatke
+      </button>
+      <button
+        type="button"
+        class="categorySelect"
+        onclick="showCategory(event)"
+        value="automobile"
+      >
+        Automobile
+      </button>
+      <button
+        type="button"
+        class="categorySelect"
+        onclick="showCategory(event)"
+        value="politics"
+      >
+        Politics
+      </button>
+      <button
+        type="button"
+        class="categorySelect"
+        onclick="showCategory(event)"
+        value="sports"
+      >
+        Sports
+      </button>
+      <button
+        type="button"
+        class="categorySelect"
+        onclick="showCategory(event)"
+        value="business"
+      >
+        Business
+      </button>
+      <button
+        type="button"
+        class="categorySelect"
+        onclick="showCategory(event)"
+        value="world"
+      >
+        World
+      </button>
+    </div>
+
+    <main>
+      <div id="hidden" style="display: none">
+        <div id="newsContainer">
+          <!-- Data from API will render here -->
+        </div>
+      </div>
+
+      <div id="text">
+        <div id="text1">Get Latest News</div>
+        <div id="text2">Stay Updated!</div>
+      </div>
+    </main>
+
+    <script src="App.js"></script>
+  </body>
+</html>
 
